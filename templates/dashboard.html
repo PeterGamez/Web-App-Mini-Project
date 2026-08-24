@@ -1,0 +1,65 @@
+<div class="dashboard-header">
+    <h1>แดชบอร์ดสรุปผลการทำงาน</h1>
+    <div class="dashboard-controls">
+        <div class="user-selector-inline">
+            <label>ผู้ใช้:</label>
+            <select class="user-select">
+            </select>
+        </div>
+        <div class="filter-group">
+            <button class="filter-btn active" data-range="all">ทั้งหมด</button>
+            <button class="filter-btn" data-range="7days">7 วันล่าสุด</button>
+            <button class="filter-btn" data-range="30days">30 วันล่าสุด</button>
+        </div>
+    </div>
+</div>
+
+<div class="dashboard-grid">
+    <div class="card">
+        <span class="card-title">เวลาทำงานทั้งหมด</span>
+        <span id="totalHours" class="card-value">0.00 ชม.</span>
+        <span class="card-desc">ชั่วโมงรวมสะสมที่บันทึก</span>
+    </div>
+
+    <div class="card success-card">
+        <span class="card-title">จำนวนวันที่เข้างาน</span>
+        <span id="totalDays" class="card-value">0 วัน</span>
+        <span class="card-desc">วันทำงานที่ไม่ซ้ำกัน</span>
+    </div>
+
+    <div class="card warning-card">
+        <span class="card-title">เวลาทำงานเฉลี่ย / วัน</span>
+        <span id="avgHours" class="card-value">0.00 ชม.</span>
+        <span class="card-desc">คำนวณจากวันทำงานทั้งหมด</span>
+    </div>
+
+    <div class="card danger-card">
+        <span class="card-title">อัตราเข้าเกณฑ์เป้าหมาย</span>
+        <span id="targetCompletion" class="card-value">0%</span>
+        <span class="card-desc">อัตราการทำงาน &ge; 8 ชม./วัน</span>
+    </div>
+</div>
+
+<div class="chart-card">
+    <div class="chart-title">ชั่วโมงการทำงานรายวัน (7 รายการล่าสุด)</div>
+    <div id="chartContainer" class="chart-container">
+    </div>
+</div>
+
+<div class="chart-card" style="margin-bottom: 0;">
+    <div class="chart-title">ประวัติการทำงานรายวัน</div>
+    <div class="table-responsive">
+        <table>
+            <thead>
+                <tr>
+                    <th>วันที่</th>
+                    <th>เวลาทำงานรวม</th>
+                    <th>จำนวนครั้งที่ลงเวลา</th>
+                    <th>สถานะเป้าหมาย</th>
+                </tr>
+            </thead>
+            <tbody id="summaryTableBody">
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บันทึกเวลาทำงาน | Attendance & Timesheet Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sarabun:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/tracker.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/users.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo" data-target="trackerTab"><img src="images/logo.png" alt="Logo"
+                    class="logo-img"> Timesheet Tracker</a>
+            <div class="nav-links">
+                <a href="#" class="nav-link active" data-target="trackerTab">ลงเวลาทำงาน</a>
+                <a href="#" class="nav-link" data-target="dashboardTab">สรุปผลการทำงาน</a>
+                <a href="#" class="nav-link" data-target="usersTab">จัดการผู้ใช้</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container" id="app-content">
+    </div>
+    <script src="js/navigation.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/tracker.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/users.js"></script>
+</body>
+
+</html>

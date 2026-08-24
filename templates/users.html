@@ -1,0 +1,36 @@
+<div class="users-container">
+    <div class="user-card">
+        <h2 id="formTitle">เพิ่มผู้ใช้งานใหม่</h2>
+        <form id="userForm" style="margin-top: 15px;">
+            <div style="display: flex; gap: 15px; margin-bottom: 20px;">
+                <div style="flex: 1;">
+                    <label for="newUserId" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: var(--text-main);">รหัสผู้ใช้ (User ID)</label>
+                    <input type="text" id="newUserId" placeholder="เช่น EMP001" required style="width: 100%; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border); font-family: var(--font-sans);">
+                </div>
+                <div style="flex: 1;">
+                    <label for="newUsername" style="display: block; font-size: 14px; font-weight: 600; margin-bottom: 5px; color: var(--text-main);">ชื่อ-นามสกุล (Username)</label>
+                    <input type="text" id="newUsername" placeholder="เช่น สมชาย ใจดี" required style="width: 100%; padding: 10px; border-radius: var(--radius-sm); border: 1px solid var(--border); font-family: var(--font-sans);">
+                </div>
+            </div>
+            <button type="submit" id="saveUserBtn" class="clock-in">เพิ่มผู้ใช้งาน</button>
+            <button type="button" id="cancelEditBtn" class="cancel-btn" style="margin-left: 8px; display: none;">ยกเลิกการแก้ไข</button>
+        </form>
+    </div>
+
+    <div class="chart-card" style="margin-bottom: 0;">
+        <div class="chart-title">รายชื่อผู้ใช้งานทั้งหมด</div>
+        <div class="table-responsive">
+            <table id="usersTable" style="margin-top: 0;">
+                <thead>
+                    <tr>
+                        <th>รหัสผู้ใช้ (User ID)</th>
+                        <th>ชื่อ-นามสกุล</th>
+                        <th style="text-align: center;">จัดการ</th>
+                    </tr>
+                </thead>
+                <tbody id="usersTableBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

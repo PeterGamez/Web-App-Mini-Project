@@ -1,0 +1,28 @@
+<h1>ระบบบันทึกเวลาทำงาน</h1>
+
+<div class="user-selector-group">
+    <label class="selector-label">เลือกผู้ใช้งาน:</label>
+    <div class="selector-wrapper">
+        <select class="user-select">
+        </select>
+        <button id="viewAllBtn" class="btn" style="white-space: nowrap; background-color: var(--primary-light); color: var(--primary);">ดูทุกคน</button>
+    </div>
+</div>
+
+<div class="controls">
+    <button id="clockBtn" class="clock-in">Clock In</button>
+    <span id="activeStatus" class="status offline">สถานะ: ยังไม่เข้างาน</span>
+</div>
+
+<div class="data-controls">
+    <button id="exportBtn">Export JSON</button>
+    <input type="file" id="importFile" accept=".json" style="display: none;">
+    <button id="importBtn">Import JSON</button>
+</div>
+
+<table id="timesheetTable">
+    <thead>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
